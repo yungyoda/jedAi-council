@@ -1,0 +1,20 @@
+.env
+__pycache__/
+.DS_Store
+
+jedai/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+jedai/          # Your specific case
+ENV/
+env.bak/
+venv.bak/

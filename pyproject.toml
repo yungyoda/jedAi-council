@@ -1,0 +1,25 @@
+[project]
+name = "jedai_council"
+version = "0.1.0"
+description = "jedai-council using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]>=0.148.0,<1.0.0",
+    "graphiti-core>=0.17.6",
+    "llama-index>=0.12.49",
+]
+
+[project.scripts]
+jedai_council = "jedai_council.main:run"
+run_crew = "jedai_council.main:run"
+train = "jedai_council.main:train"
+replay = "jedai_council.main:replay"
+test = "jedai_council.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
