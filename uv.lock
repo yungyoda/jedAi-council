@@ -1510,15 +1510,19 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "crewai", extra = ["tools"] },
+    { name = "fastapi" },
     { name = "graphiti-core" },
     { name = "llama-index" },
+    { name = "uvicorn" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "crewai", extras = ["tools"], specifier = ">=0.148.0,<1.0.0" },
+    { name = "fastapi", specifier = ">=0.116.1" },
     { name = "graphiti-core", specifier = ">=0.17.6" },
     { name = "llama-index", specifier = ">=0.12.49" },
+    { name = "uvicorn", specifier = ">=0.35.0" },
 ]
 
 [[package]]
